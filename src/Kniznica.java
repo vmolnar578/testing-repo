@@ -2,12 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Kniznica {
-    List<Kniha> zoznamKnih = new ArrayList<>();
+    private List<Kniha> zoznamKnih = new ArrayList<>();
 
-    void pridajKnihu() {
-
+    void pridajKnihu(Kniha k) {
+        zoznamKnih.add(k);
     }
     void vypisKnih() {
-
+        for (Kniha kniha : zoznamKnih) {
+            kniha.opis();
+        }
     }
 }

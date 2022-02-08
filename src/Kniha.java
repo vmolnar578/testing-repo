@@ -8,4 +8,9 @@ public class Kniha {
         this.nazov = nazov;
         this.pocetStran = pocetStran;
     }
+    public void opis() {
+        System.out.println(autor);
+        System.out.println(nazov);
+        System.out.println(pocetStran);
+    }
 }
